@@ -21,7 +21,8 @@ ShowScreen.navigationOptions = ({navigation}) => {
     return{
         headerRight:(
             <TouchableOpacity
-            onPress={() => navigation.navigate('Edit')}
+            onPress={() =>
+                 navigation.navigate('Edit', {id: navigation.getParam('id')})}
             >
                 <FontAwesome name="edit" size={30} color="black" />
             </TouchableOpacity>
