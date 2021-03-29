@@ -5,7 +5,8 @@ import { Context } from '../context/BlogContext';
 
 
 const EditScreen = ({navigation}) => {
-    console.log(navigation)
+    
+  
     const id = navigation.getParam('id');
     const {state, editBlogPost} = useContext(Context);
 
